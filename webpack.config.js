@@ -12,8 +12,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
      title: 'Development',
+     template: path.resolve(__dirname, 'src/index.html'),
     }),
-  ],
+    ],   
   devServer: {
     static: './dist',
   },
